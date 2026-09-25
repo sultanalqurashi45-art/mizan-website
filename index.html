@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ميزان — تدقيق المحاسبة والضريبة والعقود بالذكاء الاصطناعي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="w">
+<a class="brand" href="#top" aria-label="ميزان">
+<svg width="38" height="38" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0f6b4f"/><path d="M20 8v22M10 12.5h20M10 12.5l-4.5 9.5h9zM30 12.5L25.5 22h9zM14 32h12" stroke="#f0d48a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+<b>ميزان</b></a>
+<nav><a href="#audit">ابدأ التدقيق</a><a href="#lab">أدوات سريعة</a><a href="#dash">لوحة المنشأة</a><a href="#services">الخدمات</a><a href="#contracts">تدقيق العقود</a><a href="#pricing">الاشتراكات</a><a href="#trust">الأمان والامتثال</a></nav>
+<a class="btn" href="#me" data-reg="" id="hb">ابدأ تجربة مجانية</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="w">
+<div>
+<h1>ارفع فواتيرك ودفاترك وعقودك، وميزان يخبرك أين الخطأ قبل أن تكتشفه الهيئة</h1>
+<p>تدقيق ذكي للمحاسبة والزكاة والضريبة والعقود وفق الأنظمة السعودية، مع تقرير واضح بالمخالفات ومرجعها النظامي وطريقة التصحيح.</p>
+<div class="cta"><a class="btn" href="#audit">ابدأ التدقيق الآن</a><a class="btn alt" href="#contracts">شاهد تدقيق عقد</a></div>
+</div>
+<div class="ledger" role="img" aria-label="مثال على نتيجة تدقيق فاتورة">
+<h3><span>تدقيق فاتورة رقم 2047</span><span>مثال توضيحي</span></h3>
+<div class="row"><span class="tag ok">سليم</span><div>الرقم الضريبي للمورّد صحيح ومسجّل<small>15 رقمًا، يبدأ بـ 3 وينتهي بـ 3</small></div></div>
+<div class="row"><span class="tag wr">تنبيه</span><div>ضريبة القيمة المضافة محسوبة على مبلغ يشمل الخصم<small>الفرق: 187.50 ر.س — يُنصح بالتصحيح قبل الإقرار</small></div></div>
+<div class="row"><span class="tag er">مخالفة</span><div>رمز QR لا يطابق بيانات الفاتورة<small>متطلبات الفوترة الإلكترونية — المرحلة الثانية</small></div></div>
+<div class="row"><span class="tag wr">تنبيه</span><div>تكرار محتمل: نفس المورد والمبلغ قبل 3 أيام<small>راجع الفاتورة 2031</small></div></div>
+<div class="score"><span>مستوى الخطر</span><span class="bar"><i></i></span><span>مرتفع</span></div>
+</div>
+</div></div>
+
+<section id="audit" style="padding:56px 0 24px"><div class="w">
+<h2>اختر الخدمة، وارفع ملفاتك، واستلم تقرير التدقيق</h2>
+<p class="lead">ثلاث خطوات: اختيار الخدمة، ثم رفع المستندات، ثم تقرير رسمي قابل للطباعة بمؤشر الامتثال والتصحيحات.</p>
+<div class="svcs" id="svcs" role="radiogroup" aria-label="الخدمة"></div>
+<div class="panel" id="up"><div>
+<h3 id="ut" style="margin-bottom:6px"></h3><p class="note2" id="uh" style="margin:0 0 14px"></p>
+<label class="drop" id="dz"><input type="file" id="fi" multiple><b>اسحب الملفات هنا أو اضغط للاختيار</b><small>PDF، Word، Excel، PowerPoint، صور، CSV، TXT</small></label>
+<div class="chips" id="ch"></div>
+</div><div>
+<label>ملاحظات اختيارية<textarea id="nt" placeholder="مثال: نشاط المنشأة، الفترة الضريبية، ما يقلقك"></textarea></label>
+<button class="btn" id="go">ابدأ التدقيق</button><button class="btn alt" id="dm" style="color:var(--ink)">جرّب بملف تجريبي</button>
+<p class="note2" id="pg" aria-live="polite"></p>
+<p class="note2">ملفات PDF الممسوحة ضوئيًا تُقرأ كصور (أول صفحات منها). ملفات .doc القديمة: احفظها بصيغة docx أو PDF.</p>
+</div></div>
+</div></section>
+
+<section id="lab" style="padding-bottom:24px"><div class="w">
+<h2>جرّب ميزان الآن، بلا تسجيل</h2>
+<p class="lead">الأدوات تعمل فعليًا. أدخل أرقامك أو نص عقدك، وسيعطيك ميزان مؤشر امتثال من 100 مع سبب كل خصم.</p>
+<div class="tabs" role="tablist">
+<button role="tab" data-t="inv" aria-selected="true">فحص فاتورة</button>
+<button role="tab" data-t="zak" aria-selected="false">حاسبة الزكاة</button>
+<button role="tab" data-t="wht" aria-selected="false">ضريبة الاستقطاع</button>
+<button role="tab" data-t="con" aria-selected="false">تدقيق عقد</button>
+<button role="tab" data-t="ask" aria-selected="false">اسأل ميزان</button>
+</div>
+
+<div class="panel on" id="p-inv"><div>
+<label>الرقم الضريبي للمورّد<input id="vn" inputmode="numeric" placeholder="300123456700003"></label>
+<label>المبلغ قبل الضريبة (ر.س)<input id="sb" type="number" step="0.01"></label>
+<label>مبلغ الضريبة (ر.س)<input id="vt" type="number" step="0.01"></label>
+<label>الإجمالي (ر.س)<input id="tt" type="number" step="0.01"></label>
+<label>تاريخ الفاتورة<input id="dt" type="date"></label>
+<label>رمز QR على الفاتورة<select id="qr"><option value="y">موجود</option><option value="n">غير موجود</option></select></label>
+<button class="btn" id="ib">افحص الفاتورة</button><button class="btn alt" id="ix" style="color:var(--ink)">جرّب مثالًا به أخطاء</button>
+</div><div class="out" id="io" aria-live="polite"><small>ستظهر نتيجة الفحص هنا.</small></div></div>
+
+<div class="panel" id="p-zak"><div>
+<label>الوعاء الزكوي (ر.س)<input id="zb" type="number" min="0"></label>
+<label>سنة الحساب<select id="zc"><option value="2.5">هجرية (2.5%)</option><option value="2.5775">ميلادية (2.5775%)</option></select></label>
+<button class="btn" id="zk">احسب الزكاة</button>
+</div><div class="out" id="zo" aria-live="polite"><small>الحساب للمنشآت السعودية وذات الملكية الخليجية، على الوعاء بعد تسويات الهيئة.</small></div></div>
+
+<div class="panel" id="p-wht"><div>
+<label>نوع الدفعة للجهة غير المقيمة<select id="wt"><option value="15">إتاوات</option><option value="20">أتعاب إدارة</option><option value="5">خدمات فنية واستشارية</option><option value="5">إيجار</option><option value="5">فوائد</option><option value="5">أرباح موزعة</option><option value="5">تذاكر نقل دولي</option><option value="15">دفعات أخرى</option></select></label>
+<label>مبلغ الدفعة (ر.س)<input id="wa" type="number" min="0"></label>
+<button class="btn" id="wk">احسب الاستقطاع</button>
+</div><div class="out" id="wo" aria-live="polite"><small>المعدلات عامة، وقد تختلف بموجب اتفاقيات تجنّب الازدواج الضريبي.</small></div></div>
+
+<div class="panel" id="p-con"><div>
+<label>نص العقد أو البند<textarea id="ct" placeholder="الصق نص العقد هنا"></textarea></label>
+<button class="btn" id="cb">دقّق العقد</button><button class="btn alt" id="cx" style="color:var(--ink)">جرّب بندًا</button>
+</div><div class="out" id="co" aria-live="polite"><small>تظهر هنا البنود الخطرة، ثم تحليل معمّق بالذكاء الاصطناعي.</small></div></div>
+
+<div class="panel" id="p-ask"><div>
+<label>سؤالك الضريبي أو المحاسبي<textarea id="qt" placeholder="مثال: متى أقدّم إقرار القيمة المضافة الربع سنوي؟"></textarea></label>
+<button class="btn" id="qb">اسأل ميزان</button>
+</div><div class="out" id="qo" aria-live="polite"><small>يجيب ميزان بمرجع نظامي، ويقول لك متى تحتاج إلى مختص.</small></div></div>
+</div></section>
+
+<section id="dash" style="padding-bottom:24px"><div class="w">
+<h2>لوحة منشأتك: من الفحص إلى الاستمرار</h2>
+<p class="lead">أربع أدوات تجعل الامتثال عادة شهرية بدل أن يكون مفاجأة عند الفحص.</p>
+<div class="tabs" role="tablist">
+<button role="tab" data-t="cal" aria-selected="true">تقويم الامتثال</button>
+<button role="tab" data-t="rdy" aria-selected="false">جاهزية الفحص</button>
+<button role="tab" data-t="cmp" aria-selected="false">قارن نفسك بقطاعك</button>
+<button role="tab" data-t="bdg" aria-selected="false">شارة «مدقّق بميزان»</button>
+</div>
+<div class="panel on" id="p-cal"><div>
+<label>دورة إقرار القيمة المضافة<select id="cf"><option value="m">شهرية</option><option value="q">ربع سنوية</option></select></label>
+<label>نهاية سنتك المالية<select id="ce"><option value="12">ديسمبر</option><option value="1">يناير</option><option value="2">فبراير</option><option value="3">مارس</option><option value="4">أبريل</option><option value="5">مايو</option><option value="6">يونيو</option><option value="7">يوليو</option><option value="8">أغسطس</option><option value="9">سبتمبر</option><option value="10">أكتوبر</option><option value="11">نوفمبر</option></select></label>
+<label><input type="checkbox" id="cw" checked> أدفع لجهات غير مقيمة (استقطاع)</label>
+<button class="btn" id="cc">احسب مواعيدي</button><button class="btn alt" id="cke" style="color:var(--ink)">صدّر إلى تقويمك (CSV)</button>
+<p class="note2">تنبيهات البريد والجوال تُفعَّل مع الاشتراك. في هذا العرض صدّر المواعيد إلى تقويمك.</p>
+</div><div class="out" id="co2" aria-live="polite"><small>اختر إعداداتك ثم احسب مواعيدك القادمة.</small></div></div>
+<div class="panel" id="p-rdy"><div><p style="margin-top:0">حدّد ما ينطبق على منشأتك:</p><div id="rl"></div></div><div class="out" id="ro" aria-live="polite"><small>ستظهر نسبة جاهزيتك للفحص، مع ما ينقصك.</small></div></div>
+<div class="panel" id="p-cmp"><div>
+<label>قطاع منشأتك<select id="cs"><option>تجزئة</option><option>مقاولات</option><option>مطاعم وضيافة</option><option>خدمات مهنية</option><option>تجارة إلكترونية</option></select></label>
+<label>مؤشر ميزان لديك<input id="cv" type="number" min="0" max="100" placeholder="من فحص الفاتورة أو الجاهزية"></label>
+<button class="btn" id="cg">قارن</button>
+<p class="note2">أرقام القطاعات هنا توضيحية. في المنصة الفعلية تُحسب من منشآت حقيقية مجهولة الهوية، ولا تُعرض مقارنة قبل توفر 20 منشأة على الأقل في القطاع.</p>
+</div><div class="out" id="cx3" aria-live="polite"><small>أدخل مؤشرك واختر قطاعك.</small></div></div>
+<div class="panel" id="p-bdg"><div>
+<label>اسم المنشأة على الشارة<input id="bn" value="شركة المثال التجارية"></label>
+<button class="btn" id="bu">حدّث الشارة</button><button class="btn alt" id="bd" style="color:var(--ink)">نزّل الشارة SVG</button>
+<p class="note2">الشارة الحقيقية تصدر بعد التحقق من مستنداتك ومراجعة مختص، وتُسحب إذا انتهى الاشتراك أو تدهور المؤشر. هذه معاينة فقط.</p>
+</div><div id="bp"></div></div>
+</div></section>
+
+<section id="me" style="display:none;padding:48px 0 24px"><div class="w">
+<h2 id="mh"></h2><p class="lead" id="ms"></p>
+<div class="me-g"><div><b id="m1">—</b><span id="m1l">أيام التجربة المتبقية</span></div><div><b id="m2">0</b><span>تقارير التدقيق</span></div><div><b id="m3">—</b><span>آخر مؤشر ميزان</span></div></div>
+<p style="margin:0 0 20px"><button class="btn" id="mu">اشترك الآن</button></p>
+<div class="panel on" style="grid-template-columns:1fr 1fr"><div><h3 style="margin-bottom:8px">خطواتك الأولى</h3><ul class="list" id="mt"></ul></div><div><h3 style="margin-bottom:8px">سجل التقارير</h3><div class="out" id="mr"></div></div></div>
+<p class="note2"><button class="btn alt" id="mo" style="color:var(--ink);padding:6px 16px;font-size:14px">تسجيل الخروج</button> هذه نسخة تجريبية، وبياناتك محفوظة في متصفحك فقط ولا تُرسل إلى أي خادم.</p>
+</div></section>
+
+<section id="services"><div class="w">
+<h2>كل ما يحتاجه المحاسب والمالك في مكان واحد</h2>
+<p class="lead">ست أدوات تعمل معًا: ارفع ملفاتك مرة واحدة، وتتحقق كلها منها.</p>
+<div class="svc">
+<div><h3>تدقيق ضريبة القيمة المضافة</h3><p>يطابق فواتير المبيعات والمشتريات مع الإقرار، ويكشف الضريبة المحسوبة خطأً أو غير القابلة للخصم قبل التقديم.</p></div>
+<div><h3>الزكاة وضريبة الدخل</h3><p>يجهّز الوعاء الزكوي ويقارنه بالقوائم المالية، وينبّه إلى بنود قد تُرفض عند الفحص.</p></div>
+<div><h3>فاحص الفوترة الإلكترونية</h3><p>يتأكد من مطابقة الفاتورة لمتطلبات هيئة الزكاة والضريبة والجمارك: الحقول والرمز والتسلسل.</p></div>
+<div><h3>كاشف الشذوذ في الدفاتر</h3><p>يقرأ القيود وكشوف الحسابات ويعلّم التكرار والمبالغ الدائرية والقيود المتأخرة غير المعتادة.</p></div>
+<div><h3>الاستقطاع والتصرفات العقارية</h3><p>يحدد نسبة ضريبة الاستقطاع على الدفعات للجهات غير المقيمة، ويراجع مستندات التصرفات العقارية.</p></div>
+<div><h3>اسأل ميزان</h3><p>مساعد يجيب عن أسئلتك الضريبية والمحاسبية بمصدر نظامي محدد، ويقول لك متى تحتاج إلى مختص.</p></div>
+</div></div></section>
+
+<section id="why" style="padding-bottom:24px"><div class="w">
+<h2>لا تغيّر برنامجك المحاسبي، أضف إليه مدققًا</h2>
+<p class="lead">البرامج المحاسبية تسجّل عملياتك، وميزان يراجعها قبل أن تصل إلى الهيئة. لذلك يعمل فوق أي برنامج تستخدمه اليوم، بملفاته كما هي.</p>
+<div style="overflow-x:auto"><table class="cmp"><thead><tr><th></th><th>برنامج محاسبي تقليدي</th><th>ميزان</th></tr></thead><tbody>
+<tr><td>المهمة الأساسية</td><td>تسجيل العمليات وإصدار الفواتير والتقارير</td><td>مراجعة ما سُجّل واكتشاف الخطأ قبل التقديم</td></tr>
+<tr><td>متى تظهر الأخطاء</td><td>عند مراجعتك اليدوية أو عند الفحص</td><td>لحظة رفع الملف، مع سبب الخطأ وطريقة تصحيحه</td></tr>
+<tr><td>العقود</td><td>خارج نطاقه غالبًا</td><td>تدقيق بنود العقد وفق الأنظمة السعودية مع صياغة بديلة</td></tr>
+<tr><td>المستندات</td><td>تحتاج إدخالًا داخل النظام</td><td>PDF وExcel وWord وصور، كما هي</td></tr>
+<tr><td>التقرير</td><td>تقارير مالية عامة</td><td>تقرير امتثال رسمي بمؤشر ميزان وخطوات تصحيح وسطر لتوقيع المحاسب</td></tr>
+<tr><td>التغيير المطلوب منك</td><td>ترحيل بياناتك إليه</td><td>لا شيء، صدّر تقريرك وارفعه</td></tr>
+</tbody></table></div>
+<p class="note2">الربط المباشر (API) مع البرامج المحاسبية الشائعة ضمن خطة التطوير، والآن تُقرأ تقاريرها المصدَّرة.</p>
+</div></section>
+
+<section id="contracts" class="contract"><div class="w">
+<div>
+<h2>افهم العقد قبل أن توقّعه</h2>
+<p class="lead">ارفع عقدًا بالعربية أو الإنجليزية، فيعلّم ميزان البنود المخالفة أو المخاطرة، ويقترح صياغة بديلة.</p>
+<ul class="list">
+<li><b>مطابقة الأنظمة</b><span>نظام العمل، نظام الشركات، نظام المعاملات المدنية، نظام الإيجار، ونظام المنافسات والمشتريات الحكومية.</span></li>
+<li><b>بنود مفقودة</b><span>يعرض ما يغيب عن العقد عادةً: الإنهاء، السرية، الاختصاص القضائي، الغرامات.</span></li>
+<li><b>مقارنة بنموذج معتمد</b><span>يقارن عقدك بنموذج قياسي ويُظهر الفروق بندًا ببند.</span></li>
+<li><b>ملخص لغير المختصين</b><span>ملخص من صفحة واحدة بالتزاماتك ومواعيدك ومبالغك.</span></li>
+</ul></div>
+<div class="doc" aria-label="مثال على عقد مدقق">
+<p>يحق للطرف الأول <mark class="r">إنهاء العقد في أي وقت دون إشعار</mark> ويلتزم الطرف الثاني <mark>بغرامة تأخير 5% يوميًا</mark> من قيمة العقد.</p>
+<div class="note"><b>خطر مرتفع:</b> الإنهاء دون إشعار قد يخالف الأحكام المنظمة للإنهاء. البديل المقترح: إشعار كتابي مدته 30 يومًا.</div>
+<div class="note"><b>تنبيه:</b> قد تخفّض الجهة القضائية الغرامة المبالغ فيها. البديل المقترح: سقف إجمالي للغرامة.</div>
+</div>
+</div></section>
+
+<section id="pricing"><div class="w">
+<h2>اشتراك يناسب حجم عملك</h2>
+<p class="lead">الأسعار توضيحية وقبل ضريبة القيمة المضافة 15%. تبدأ بتجربة مجانية بلا بطاقة، وتدفع بمدى أو أبل باي أو فيزا.</p>
+<div class="tog" role="group" aria-label="مدة الاشتراك"><button id="m" aria-pressed="true">شهري</button><button id="y" aria-pressed="false">سنوي (وفّر 20%)</button></div>
+<div class="plans">
+<div class="plan"><h3>أفراد</h3><p class="for">للموظف وصاحب النشاط الصغير والمستقل.</p><div class="price"><span data-p="49">49</span> <small>ر.س / شهر</small></div>
+<ul><li>20 مستندًا شهريًا</li><li>تدقيق فواتير وعقود بسيطة</li><li>اسأل ميزان</li><li>تقرير PDF</li></ul><a class="btn alt" href="#me" data-reg="فرد">ابدأ مجانًا</a></div>
+<div class="plan hot"><h3>مؤسسات</h3><p class="for">للمؤسسات الفردية والمكاتب ومنشآت النمو.</p><div class="price"><span data-p="249">249</span> <small>ر.س / شهر</small></div>
+<ul><li>500 مستند شهريًا</li><li>كل أدوات الضريبة والزكاة</li><li>فحص الفوترة الإلكترونية</li><li>3 مستخدمين</li><li>مراجعة عقود غير محدودة</li></ul><a class="btn" href="#me" data-reg="مؤسسة">جرّب 14 يومًا</a></div>
+<div class="plan"><h3>شركات</h3><p class="for">للشركات ذات الفروع أو الحجم الكبير.</p><div class="price"><span data-p="899">899</span> <small>ر.س / شهر</small></div>
+<ul><li>مستندات بلا حد عملي</li><li>ربط مباشر بنظامك المحاسبي</li><li>صلاحيات وسجل تدقيق</li><li>مدير حساب مخصص</li><li>عقد مستوى خدمة</li></ul><a class="btn alt" href="#me" data-reg="شركة">ابدأ تجربة الشركات</a></div>
+</div></div></section>
+
+<section id="trust" style="padding-top:0"><div class="w">
+<h2>بياناتك المالية أمانة</h2><p class="lead">هذه التزامات التصميم المستهدفة للمنصة، ويجب استيفاؤها فعليًا قبل الإطلاق.</p>
+<div class="trust">
+<div><h3>استضافة داخل المملكة</h3><p>البيانات على خوادم سعودية.</p></div>
+<div><h3>نظام حماية البيانات الشخصية</h3><p>سياسات موافقة وحذف وفق النظام.</p></div>
+<div><h3>تشفير ومصادقة ثنائية</h3><p>للملفات وأثناء النقل وللحسابات.</p></div>
+<div><h3>مراجعة بشرية</h3><p>محاسب قانوني مرخّص يراجع التقارير الحساسة.</p></div>
+</div></div></section>
+
+<section id="roi" style="padding-bottom:24px"><div class="w"><h2>احسب ما قد تُكلّفك الأخطاء</h2><p class="lead">تقدير حسابي بمدخلاتك أنت، وليس وعدًا بنتيجة.</p>
+<div class="panel on"><div>
+<label>عدد الفواتير شهريًا<input id="a1" type="number" min="0" value="300"></label>
+<label>نسبة الفواتير التي فيها خطأ (%)<input id="a2" type="number" min="0" max="100" value="5"></label>
+<label>متوسط الضريبة في الفاتورة (ر.س)<input id="a3" type="number" min="0" value="150"></label>
+<label>غرامة أو تكلفة تصحيح تقديرية (% من مبلغ الخطأ، عدّلها حسب حالتك)<input id="a4" type="number" min="0" value="25"></label>
+</div><div class="out" id="ao" aria-live="polite"></div></div></div></section>
+
+<section id="faq" style="padding-top:24px"><div class="w faq"><h2>أسئلة شائعة</h2>
+<details><summary>هل يغني ميزان عن المحاسب القانوني؟</summary><p>لا. ميزان أداة مساندة تكتشف الأخطاء وتقترح التصحيح، والاعتماد النهائي للمحاسب القانوني المرخّص. لهذا يحمل كل تقرير سطرًا لتوقيعه.</p></details>
+<details><summary>هل يقرأ ملفات برنامجي المحاسبي الحالي؟</summary><p>نعم، يقرأ تقاريره المصدَّرة بصيغ PDF وExcel وWord والصور، دون ترحيل بياناتك. الربط المباشر ضمن خطة التطوير.</p></details>
+<details><summary>أين تُحفظ ملفاتي؟</summary><p>المنصة مصممة لتُستضاف داخل المملكة وفق نظام حماية البيانات الشخصية، وأن يكون حذف الملفات بعد إصدار التقرير هو الخيار الافتراضي.</p></details>
+<details><summary>كيف أدفع؟</summary><p>بمدى أو أبل باي أو فيزا وماستركارد عبر مزوّد دفع مرخّص. لا تُدخل بطاقتك في ميزان، ولا نخزّن رقمها.</p></details>
+<details><summary>هل أستطيع الإلغاء؟</summary><p>نعم، من حسابك في أي وقت، ويستمر اشتراكك حتى نهاية الفترة المدفوعة.</p></details>
+</div></section>
+
+<div class="fin"><div class="w"><h2>اكتشف أخطاءك قبل أن تُكلّفك</h2><p>ابدأ بتدقيق أول مستند خلال دقيقتين.</p><a class="btn" href="#me" data-reg="">ابدأ تجربتك المجانية</a></div></div>
+</main>
+<div id="rv" role="dialog" aria-label="تقرير التدقيق"><div class="rvbar"><button class="btn" id="rp">طباعة التقرير</button><button class="btn alt" id="rs" style="color:#fff">حفظ كملف</button><button class="btn alt" id="rc" style="color:#fff">إغلاق</button></div><iframe id="rf" title="تقرير التدقيق"></iframe></div>
+<div id="rg" role="dialog" aria-label="إنشاء حساب"><div class="rgv"><h2>لا تغيّر برنامجك المحاسبي. أضف إليه مدققًا ذكيًا.</h2><p>افتح حسابك في دقيقة وجرّب 14 يومًا بلا بطاقة.</p><ul>
+<li><b>يقرأ ملفاتك كما هي</b><span>PDF وExcel وWord وصور من أي برنامج محاسبي.</span></li>
+<li><b>يكتشف الخطأ قبل الهيئة</b><span>ضريبة، زكاة، فوترة إلكترونية، ودفاتر.</span></li>
+<li><b>يدقق عقودك</b><span>بنود خطرة وناقصة وفق الأنظمة السعودية.</span></li>
+<li><b>تقرير رسمي قابل للطباعة</b><span>بمؤشر ميزان وخطوات تصحيح.</span></li></ul></div>
+<form class="rgf" id="rf2" novalidate><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:24px">إنشاء حساب</h2><button type="button" class="btn alt" id="rgx" style="color:var(--ink);padding:6px 14px">إغلاق</button></div>
+<p class="note2" style="margin:6px 0 16px">لديك حساب؟ هذه نسخة تجريبية بلا تسجيل دخول حقيقي بعد.</p>
+<div class="ty" id="ty" role="radiogroup" aria-label="نوع الحساب"><button type="button" role="radio" aria-checked="true" data-v="فرد">فرد</button><button type="button" role="radio" aria-checked="false" data-v="مؤسسة">مؤسسة</button><button type="button" role="radio" aria-checked="false" data-v="شركة">شركة</button></div>
+<label>الاسم الكامل<input id="rn" autocomplete="name"></label>
+<label>اسم المنشأة (اختياري للأفراد)<input id="rc2" autocomplete="organization"></label>
+<label>البريد الإلكتروني<input id="re" type="email" dir="ltr" autocomplete="email"></label>
+<label>رقم الجوال<div class="ph"><select id="rk" dir="ltr"><option>+966</option><option>+971</option><option>+965</option><option>+973</option><option>+968</option><option>+974</option><option>+20</option><option>+962</option></select><input id="rp2" type="tel" dir="ltr" inputmode="numeric" placeholder="5xxxxxxxx"></div></label>
+<label>قطاع النشاط<select id="rs2"><option>تجزئة</option><option>مقاولات</option><option>مطاعم وضيافة</option><option>خدمات مهنية</option><option>تجارة إلكترونية</option><option>أخرى</option></select></label>
+<label class="cb"><input type="checkbox" id="rt"> أوافق على الشروط والأحكام وسياسة الخصوصية.</label>
+<label class="cb"><input type="checkbox" id="rm"> أوافق على تلقي تنبيهات المواعيد والعروض (اختياري، ويمكنك إلغاؤه في أي وقت).</label>
+<div class="err" id="rerr" aria-live="polite"></div>
+<button class="btn" type="submit" style="width:100%">ابدأ 14 يومًا مجانًا</button>
+</form><div class="rgf" id="ro2" style="display:none"><h2 style="font-size:24px">تحقق من جوالك</h2>
+<p class="note2" style="margin:6px 0 4px">أرسلنا رمزًا من 6 أرقام إلى <b id="oph" dir="ltr"></b></p>
+<div class="demo">وضع تجريبي: لا تُرسل رسالة فعلية. رمزك: <b id="odc"></b></div>
+<label>رمز التحقق<input id="oi" class="otp" inputmode="numeric" maxlength="6" autocomplete="one-time-code" placeholder="••••••"></label>
+<div class="err" id="oer" aria-live="polite"></div>
+<button class="btn" id="ov" type="button" style="width:100%">تأكيد الرمز</button>
+<p style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px"><button class="btn alt" id="ors" type="button" style="color:var(--ink);padding:6px 14px;font-size:14px" disabled></button><button class="btn alt" id="oed" type="button" style="color:var(--ink);padding:6px 14px;font-size:14px">تعديل الرقم</button></p>
+<p class="note2">رمز التحقق صالح 5 دقائق، ولك 5 محاولات لكل رمز.</p></div></div>
+<div id="ck" role="dialog" aria-label="الدفع"><div class="rgv"><h2>اشتراك آمن في دقيقة</h2><p>ادفع بالوسيلة التي تفضلها.</p><ul>
+<li><b>مدى وأبل باي وفيزا</b><span>عبر مزوّد دفع مرخّص في المملكة.</span></li>
+<li><b>لا نرى بطاقتك</b><span>يُدخل العميل بياناته في صفحة المزوّد المشفرة فقط.</span></li>
+<li><b>ألغِ متى شئت</b><span>يستمر اشتراكك حتى نهاية الفترة المدفوعة.</span></li></ul></div>
+<div class="rgf"><div id="kfm"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="font-size:24px">الدفع</h2><button type="button" class="btn alt" id="kx2" style="color:var(--ink);padding:6px 14px">إغلاق</button></div>
+<div class="demo">وضع تجريبي: لا يوجد دفع حقيقي، ولا تُدخل أي بيانات بطاقة هنا.</div>
+<label>الباقة<select id="kt"><option value="فرد">أفراد: 49 ر.س / شهر</option><option value="مؤسسة">مؤسسات: 249 ر.س / شهر</option><option value="شركة">شركات: 899 ر.س / شهر</option></select></label>
+<div class="tog" id="kc"><button type="button" data-v="m" aria-pressed="true">شهري</button><button type="button" data-v="y" aria-pressed="false">سنوي (وفّر 20%)</button></div>
+<div class="sum"><div><span>المبلغ</span><span id="ks"></span></div><div><span>ضريبة القيمة المضافة 15%</span><span id="kv"></span></div><div><span>الإجمالي</span><span id="kx"></span></div></div>
+<div class="ty" id="pm" role="radiogroup" aria-label="وسيلة الدفع"><button type="button" role="radio" aria-checked="true" data-v="mada">مدى</button><button type="button" role="radio" aria-checked="false" data-v="apple">Apple Pay</button><button type="button" role="radio" aria-checked="false" data-v="card">فيزا / ماستركارد</button></div>
+<p class="note2" id="pmi" style="margin:0 0 10px"></p><div class="err" id="ker" aria-live="polite"></div>
+<button class="btn" id="kpay" type="button" style="width:100%"></button><button class="btn alt" id="kfail" type="button" style="width:100%;color:var(--ink);margin-top:8px">محاكاة رفض العملية</button></div>
+<div id="kok" style="display:none"><h2 style="font-size:24px;margin-bottom:8px">تم تفعيل اشتراكك</h2><div class="demo">إيصال تجريبي</div><div class="sum" id="krc"></div><p class="note2">الفاتورة الضريبية الإلكترونية تُصدر من ميزان وفق متطلبات الهيئة عند الإطلاق الفعلي.</p><button class="btn" id="kgo" type="button" style="width:100%">الانتقال إلى حسابي</button></div></div></div>
+<footer><div class="w">ميزان أداة مساندة بالذكاء الاصطناعي، ولا تُغني عن رأي محاسب قانوني أو مستشار قانوني مرخّص. الأسعار والأرقام في هذه الصفحة أمثلة توضيحية.</div></footer>
+
+
+
+<script src="js/app.js"></script>
+</body>
+
+<script src="js/app.js"></script>
+</body>
+</html>
